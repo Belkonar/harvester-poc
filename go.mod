@@ -1,4 +1,4 @@
-module harvester_api
+module harvester
 
 go 1.22.5
 

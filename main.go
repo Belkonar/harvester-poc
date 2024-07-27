@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"harvester_api/core"
+	"harvester/core"
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
