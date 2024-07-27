@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"harvester_api/core"
+)
 
 func main() {
-	fmt.Println("hi")
+	fmt.Println(core.GetThing())
 }
