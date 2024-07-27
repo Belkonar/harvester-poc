@@ -8,6 +8,13 @@ import (
 
 func MainRoutes(r *chi.Mux) {
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("hi"))
+		err := WriteKV("/e/f", "lolgd")
+
+		if err != nil {
+			w.Write([]byte(err.Error()))
+			return
+		}
+
+		w.Write([]byte("good"))
 	})
 }
